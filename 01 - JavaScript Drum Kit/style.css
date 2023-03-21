@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+html{
+    font-size: 10px;
+    background: url('drums_background.jpg') bottom center;
+    background-size: cover;
+}
+
+
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+kbd{
+    display: block;
+    font-size: 4rem;
+}
+
+.header{
+    font-family: 'Oswald', sans-serif;
+    min-height: 20vh;
+    font-size: 8rem;
+    text-align: center;
+    padding-top: 10vh;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    
+}
+
+/* Big container */
+.keys{
+    
+    display: flex;
+    flex: 1;
+    min-height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Individual buttons */
+.key{
+    border: .4rem solid silver;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgb(0,0,0,0.7);
+    text-shadow: 0 0 .5rem black;
+}
+
+/* classe do spam/legenda */
+.sound{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+}
+
+/* Event class */
+.playing{
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600
+}
